@@ -1,1 +1,41 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sort data</title>
+</head>
+<body>
+<!-- SeyyedMahdi Hassanpour Matikolae
+this is  a simple sorter via javascript for my last part of my thesis, the dictionary part en ->fa sorted
+ words.
+-->
+<h1>Sorting Process</h1>
+<p> please enter your list od strings for sorting in the below textBox:</p>
+<p>Select which method you are using to input data:</p>
+<input type="radio" name="input" value="newLine" checked="checked">newLine<br>
+<input type="radio" name="input" value="colon">colon<br>
+
+<textarea name="Text" cols="40" rows="10" id="inpData"></textarea>
+<input type="button" value="Sort" id="btnProcess" onClick="prcSorting('inpData');"><br>
+
+<p>Select which method you want to use in output:</p>
+<input type="radio" name="output" value="newLine" checked="checked">newLine<br>
+<input type="radio" name="output" value="colon">colon<br>
+<p id="output"></p>
+<script>
+    function prcSorting(fieldId) {
+        var inputRadios = document.querySelector('input[name="input"]:checked').value;
+        var outputRadios = document.querySelector('input[name="output"]:checked').value;
+        var dataList = document.getElementById(fieldId).value;
+        var outputPar = document.getElementById("output");
+        // input prepossess
+        if(inputRadios === "colon"){dataList = dataList.split(",").sort();}
+        else if(inputRadios === "newLine"){dataList = dataList.split("\n").sort();}
+        // output sort process
+        if(outputRadios === "colon"){outputPar.innerText = dataList.sort();}
+        else if(outputRadios === "newLine"){ outputPar.innerHTML = dataList.join("<br>");}
+    }
+</script>
+</body>
+</html>
