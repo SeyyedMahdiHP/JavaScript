@@ -15,6 +15,7 @@ this is  a simple sorter via javascript for my last part of my thesis, the dicti
 <input type="radio" name="input" value="newLine" checked="checked">newLine<br>
 <input type="radio" name="input" value="colon">colon<br>
 <input type="checkbox" id="capitalizeFirstLetter" checked>capitalizeFirstLetter<br>
+<input type="checkbox" id="inputChkBoxSet" checked>Remove Duplicates<br>
 <textarea name="Text" cols="40" rows="10" id="inpData"></textarea>
 <input type="button" value="Sort" id="btnProcess" onClick="prcSorting('inpData');"><br>
 
@@ -29,17 +30,23 @@ this is  a simple sorter via javascript for my last part of my thesis, the dicti
         var dataList = document.getElementById(fieldId).value;
         var outputPar = document.getElementById("output");
 		var inputChkBoxCapitalizeFirstLetter = document.getElementById("capitalizeFirstLetter").checked;
+		var inputChkBoxSet = document.getElementById("inputChkBoxSet").checked;
         // input prepossess
-        if(inputRadios === "colon"){dataList = dataList.split(",").sort();}
-        else if(inputRadios === "newLine"){dataList = dataList.split("\n").sort();}
+        if(inputRadios === "colon"){dataList = dataList.split(",");}
+        else if(inputRadios === "newLine"){dataList = dataList.split("\n");}
 		if(inputChkBoxCapitalizeFirstLetter ===true){
 				for(var i = 0 ; i < dataList.length ; i++){
 				dataList[i] = dataList[i].charAt(0).toUpperCase() + dataList[i].substr(1);
 				}
 		}
+		dataList = dataList.sort();
+		if(inputChkBoxSet ===true){
+			var dataSet = new Set(dataList);
+			dataList = Array.from(dataSet);
+		}
         // output sort process
-        if(outputRadios === "colon"){outputPar.innerText = dataList.sort();}
-        else if(outputRadios === "newLine"){ outputPar.innerHTML = dataList.sort().join("<br>");}
+        if(outputRadios === "colon"){outputPar.innerText = dataList;}
+        else if(outputRadios === "newLine"){ outputPar.innerHTML = dataList.join("<br>");}
 
     }
 </script>
