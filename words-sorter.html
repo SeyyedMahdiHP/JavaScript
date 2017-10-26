@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +14,7 @@ this is  a simple sorter via javascript for my last part of my thesis, the dicti
 <p>Select which method you are using to input data:</p>
 <input type="radio" name="input" value="newLine" checked="checked">newLine<br>
 <input type="radio" name="input" value="colon">colon<br>
-
+<input type="checkbox" id="capitalizeFirstLetter" checked>capitalizeFirstLetter<br>
 <textarea name="Text" cols="40" rows="10" id="inpData"></textarea>
 <input type="button" value="Sort" id="btnProcess" onClick="prcSorting('inpData');"><br>
 
@@ -29,12 +28,19 @@ this is  a simple sorter via javascript for my last part of my thesis, the dicti
         var outputRadios = document.querySelector('input[name="output"]:checked').value;
         var dataList = document.getElementById(fieldId).value;
         var outputPar = document.getElementById("output");
+		var inputChkBoxCapitalizeFirstLetter = document.getElementById("capitalizeFirstLetter").checked;
         // input prepossess
         if(inputRadios === "colon"){dataList = dataList.split(",").sort();}
         else if(inputRadios === "newLine"){dataList = dataList.split("\n").sort();}
+		if(inputChkBoxCapitalizeFirstLetter ===true){
+				for(var i = 0 ; i < dataList.length ; i++){
+				dataList[i] = dataList[i].charAt(0).toUpperCase() + dataList[i].substr(1);
+				}
+		}
         // output sort process
         if(outputRadios === "colon"){outputPar.innerText = dataList.sort();}
-        else if(outputRadios === "newLine"){ outputPar.innerHTML = dataList.join("<br>");}
+        else if(outputRadios === "newLine"){ outputPar.innerHTML = dataList.sort().join("<br>");}
+
     }
 </script>
 </body>
