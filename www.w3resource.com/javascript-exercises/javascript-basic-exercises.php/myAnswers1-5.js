@@ -76,3 +76,12 @@ console.log("Area:"+ calculateArea(p,5,6,7));
 5. Write a JavaScript program to rotate the string 'w3resource' in right direction
 by periodically removing one letter from the end of the string and attaching it to the front. 
 */
+var item = 'w3resource';
+var rotateString = function(str){
+  for(var i =0; i< str.length; i++){
+    console.log(str);
+    str = str.slice(1) + str.slice(0,1);
+  }
+};
+rotateString(item);
+// there is a gui version at:
