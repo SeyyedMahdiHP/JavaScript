@@ -49,7 +49,7 @@ Click me to see the solution
 window.print();
 
 /*
-Write a JavaScript program to get the current date.  Go to the editor
+3. Write a JavaScript program to get the current date.  Go to the editor
 Expected Output : 
 mm-dd-yyyy, mm/dd/yyyy or dd-mm-yyyy, dd/mm/yyyy 
 */
@@ -64,5 +64,15 @@ console.log(theDay+"-"+theMonth+"-"+theYear);
 /*
 4. Write a JavaScript program to find the area of a triangle where lengths of the three of its sides are 5, 6, 7.  
 */
+// Heron's formula calculate triangle's area without iths height  A =squareRoot(p*(p-a)*(p-b)*(p-c))
+// where p is semi-perimeter of triangle: p = (a+b+c)/2
+// https://en.wikipedia.org/wiki/Heron%27s_formula
+var p = function(a, b, c){return (a+b+c)/2;}(5,6,7);
+var calculateArea = function(p, a, b, c){return Math.sqrt(p*(p-a)*(p-b)*(p-c));};
+console.log("Preimiter:"+p*2)
+console.log("Area:"+ calculateArea(p,5,6,7));
 
-
+/*
+5. Write a JavaScript program to rotate the string 'w3resource' in right direction
+by periodically removing one letter from the end of the string and attaching it to the front. 
+*/
