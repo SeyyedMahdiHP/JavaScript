@@ -84,7 +84,7 @@ var rotateString = function(str){
   }
 };
 rotateString(item);
-// there is a gui version at:
+// there is a gui version at: https://codepen.io/SeyyedMahdiHP/pen/gXzyYy
 //HTML:
  <body onload="animate_string('target')">
   <h1 id="target">w3resource </h1>
