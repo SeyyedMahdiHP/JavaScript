@@ -69,7 +69,7 @@ console.log(theDay+"-"+theMonth+"-"+theYear);
 // https://en.wikipedia.org/wiki/Heron%27s_formula
 var p = function(a, b, c){return (a+b+c)/2;}(5,6,7);
 var calculateArea = function(p, a, b, c){return Math.sqrt(p*(p-a)*(p-b)*(p-c));};
-console.log("Preimiter:"+p*2)
+console.log("Preimiter:"+(p*2));
 console.log("Area:"+ calculateArea(p,5,6,7));
 
 /*
