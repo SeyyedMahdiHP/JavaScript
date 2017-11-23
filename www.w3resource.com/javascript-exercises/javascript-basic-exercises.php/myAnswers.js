@@ -50,4 +50,10 @@ console.log("Current Time is: "+theHours+" : "+minutes+" : "+seconds);
 2. Write a JavaScript program to print the contents of the current window.  Go to the editor
 Click me to see the solution
 */
+// print the page in pdf format or send it to printer
+window.print();
+
+/*
+
+*/
 
