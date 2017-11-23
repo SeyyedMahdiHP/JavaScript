@@ -85,3 +85,17 @@ var rotateString = function(str){
 };
 rotateString(item);
 // there is a gui version at:
+//HTML:
+ <body onload="animate_string('target')">
+  <h1 id="target">w3resource </h1>
+</body>
+//JS:
+function animate_string(id){
+  var element = document.getElementById(id);
+    var textNode = element.childNodes[0];
+  var text = textNode.data;
+  setInterval(function(){
+    text = text.slice(1) + text.slice(0,1);
+    textNode.data = text;
+  }, 100);
+};
