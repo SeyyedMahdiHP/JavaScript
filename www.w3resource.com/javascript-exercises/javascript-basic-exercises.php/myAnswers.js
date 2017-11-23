@@ -13,8 +13,28 @@ var minutes = today.getMinutes();
 var seconds = today.getSeconds();
 
 var theHours = function (hours=0){
-  var amPm = (hours>=12) ? " PM" : " AM";
+  var amPm = (hours>=12) ? " PM " : " AM ";
   hours = (hours >=12) ? hours-12: hours;
+  if(hours === 0 && amPm ===" PM "){
+    if(minutes === 0 && seconds === 0){
+       hours = 12;
+       amPm = "Noon";
+       }
+    else{
+      hours = 12;
+      amPm = " PM ";
+    }
+  }
+  else if (hours ===0 && amPm ===" AM "){
+    if(minutes ===0 && seconds === 0){
+      hours = 12;
+      amPm = " midNight ";
+    }
+    else{
+      hours = 12;
+      amPm = " AM ";
+    }
+  }
   return (hours + amPm).toUpperCase();}(theHours);
 
 console.log(today.toString());
