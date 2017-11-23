@@ -40,3 +40,14 @@ var theHours = function (hours=0){
 console.log(today.toString());
 console.log("Today is: "+ daylist[theDay]);
 console.log("Current Time is: "+theHours+" : "+minutes+" : "+seconds);
+
+
+
+
+
+
+/*
+2. Write a JavaScript program to print the contents of the current window.  Go to the editor
+Click me to see the solution
+*/
+
