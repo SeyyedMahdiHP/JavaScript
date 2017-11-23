@@ -98,4 +98,11 @@ function animate_string(id){
     text = text.slice(1) + text.slice(0,1);
     textNode.data = text;
   }, 100);
+  /*instead above function, use this to see what happens: 
+  setInterval(function(){
+    for(var i=0;i<text.length-1;i++){
+    text = text.slice(1) + text.slice(0,1);
+    textNode.data = text;}
+  }, 100);*/
 };
+
