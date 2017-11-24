@@ -89,6 +89,8 @@ rotateString(item);
  <body onload="animate_string('target')">
   <h1 id="target">w3resource </h1>
 </body>
+//HTML ver2:
+  <h1 id="target" onClick="animate_string('target')">w3resource </h1>
 //JS:
 function animate_string(id){
   var element = document.getElementById(id);
