@@ -35,3 +35,46 @@ year = window.prompt("Input a Year : ");
 x = (year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0);
 alert(x);
 
+/*
+7. Write a JavaScript program to find 1st January is being a Sunday between 2014 and 2050.
+*/
+//https://thimbleprojects.org/seyyedmahdi/366764
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Made with Thimble</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Q7:</h1>
+    <p>Write a JavaScript program to find <strong>1st January</strong> is being a <strong>Sunday</strong> between 2014 and 2050.
+    </p>
+    <p>Range:<input id="rangeInput"  min="1970" max="2050" placeholder="1970-2050" value="1970-2050"></p>
+    <input type="button" value="Start" onClick="checkRange('rangeInput');">
+    <p>Answer:<span id="answerBox"></span></p>
+    <script>
+      var isSunday = function(year){
+        var answerElement = document.getElementById("answerBox");
+        var dayObject = new Date(year, 0, 1);
+        if (dayObject.getDay() === 0){
+          answerElement.innerHTML += dayObject.toDateString()+"sunday<br>";
+          return true;
+        }
+        return false;
+      };
+      var checkRange = function(id){
+        var rangeElement = document.getElementById(id);
+        var range = rangeElement.value.split("-");
+        var min = range[0];
+        var max = range[1];
+        var flag = false;
+        for(var year =min; year<=max; year++){
+          flag = isSunday(year);
+          console.log(year +" "+ flag);
+        }
+      };
+    </script>
+  </body>
+</html>
