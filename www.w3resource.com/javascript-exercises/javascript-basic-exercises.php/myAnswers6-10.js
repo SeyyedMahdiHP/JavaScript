@@ -78,3 +78,43 @@ alert(x);
     </script>
   </body>
 </html>
+
+/*
+8. Write a JavaScript program where the program takes a random integer between 1 to 10,
+the user is then prompted to input a guess number. If the user input matches with guess number,
+the program will display a message "Good Work" otherwise display a message "Not matched". 
+*/
+//https://thimbleprojects.org/seyyedmahdi/368191/
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Q8</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Q8:</h1>
+    <p>
+      Write a JavaScript program where the program takes a random integer between 1 to 10, the user is then prompted to input a guess number. If the user input matches with guess number, the program will display a message "Good Work" otherwise display a message "Not matched". 
+    </p>
+    <p>Solution:
+      <input type="button" value="Guess" id="btnStart" onClick="checkGuess();">
+    </p>
+    <script>
+    var checkGuess = function(){
+      var randNum = parseInt(getRandomNumber(1,10));
+      var guess = parseInt(prompt("Enter you're guess number 1-10:","0"));
+      console.log(randNum);
+      var check = (randNum === guess) ? true : false;
+      if(check){alert("Good Work!");}
+      else{alert("Not Matched!");}
+      alert("the Random Number Was:"+randNum);
+      
+    };
+    var getRandomNumber = function(min, max){
+      return Math.random()*(max-min) + min;
+    };
+    </script>
+  </body>
+</html>
