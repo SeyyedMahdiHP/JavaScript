@@ -123,3 +123,34 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
 /*
 9. Write a JavaScript program to calculate days left until next Christmas.
 */
+//https://thimbleprojects.org/seyyedmahdi/368209
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Q9</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body onClick="checkNextChristmas('answerPlace');">
+    <h1>Q9:</h1>
+    <p>
+      Write a JavaScript program to calculate days left until next Christmas.
+    </p>
+    <p>Answer(<em>click on the page to see the result)</em>:<br><span id="answerPlace"></span></p>
+    <script>
+    var checkNextChristmas = function(id){
+      var answElem = document.getElementById(id);
+      var today = new Date();
+      var nextChris = calcNextChrisTime(today);
+      var remainingTime =(nextChris.getTime() - today.getTime())/(1000*3600*24);
+      answElem.innerHTML = Math.ceil(remainingTime) + "Day Remaining to Next Christmas:-)";
+    };
+      var calcNextChrisTime = function(today){
+        var flag = (today.getMonth()===11 && today.getDate()>25)? true : false;
+        var nextChris=(flag)? new Date(today.getFullYear()+1,11,25) : new Date(today.getFullYear(),11,25);
+        return nextChris;
+      };
+    </script>
+  </body>
+</html>
