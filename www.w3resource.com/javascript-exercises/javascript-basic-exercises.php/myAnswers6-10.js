@@ -104,7 +104,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
     </p>
     <script>
     var checkGuess = function(){
-      var randNum = parseInt(getRandomNumber(1,10));
+      var randNum = parseInt(getRandomNumber(1,11));// inclusive
       var guess = parseInt(prompt("Enter you're guess number 1-10:","0"));
       console.log(randNum);
       var check = (randNum === guess) ? true : false;
@@ -114,7 +114,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
       
     };
     var getRandomNumber = function(min, max){
-      return Math.random()*(max-min) + min;
+      return Math.random()*(max-min) + min; // "+min" used to set  the result greater than min
     };
     </script>
   </body>
