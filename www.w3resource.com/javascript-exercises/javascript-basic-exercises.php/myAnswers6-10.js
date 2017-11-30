@@ -119,3 +119,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
     </script>
   </body>
 </html>
+
+/*
+9. Write a JavaScript program to calculate days left until next Christmas.
+*/
