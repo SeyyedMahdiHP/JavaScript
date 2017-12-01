@@ -1,4 +1,7 @@
-
+// in the name of Allah
+/*
+this section is for conceptual questions
+*/
 1.What are the benefits of FirstClass Functions?
 //var print = console.log();
 // var shopping = function(args,...){};
