@@ -34,6 +34,15 @@ console.log(isLeap(2016));   //true
 year = window.prompt("Input a Year : ");
 x = (year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0);
 alert(x);
+[[https://github.com/username/repository/blob/master/img/octocat.png|alt=octocat]]
+
+Article versions
+
+    GitHub.com
+    GitHub Enterprise 2.11
+    GitHub Enterprise 2.10
+    GitHub Enterprise 2.9
+
 
 /*
 7. Write a JavaScript program to find 1st January is being a Sunday between 2014 and 2050.
