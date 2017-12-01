@@ -154,3 +154,48 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
     </script>
   </body>
 </html>
+
+
+/*
+10. Write a JavaScript program to calculate multiplication and division of two numbers (input from user).
+*/
+https://thimbleprojects.org/seyyedmahdi/369507
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Q10</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Q10:</h1>
+    <p>
+      Write a JavaScript program to calculate multiplication and division of two numbers (input from user).
+      <img src="https://www.w3resource.com/w3r_images/sample-form.png" alt="Multiplication division of two number, each in seperate text input" title="multiply and division two value ">
+    </p>
+    <p>Answer:<code>
+      <br>1st Number: <input type="text" placeholder="enter first number here" value="12" id="n1">
+      <br>2nd Number: <input type="text" placeholder="enter second number here" value="10" id="n2">
+      <br><input type="button" value="Multiply" onClick="multiplication();"> <input type="button" value="Divide" onClick="division();">
+      </code>
+      <br>
+      The Result Is:<br><span id="answerPane"></span>
+      </p>
+    <script>
+      function multiplication(){
+        var n1 = Number(document.getElementById("n1").value);
+        var n2 = Number(document.getElementById("n2").value);
+        var elem = document.getElementById("answerPane");
+        elem.innerHTML = n1*n2;
+      }
+      function division(){
+        var n1 = Number(document.getElementById("n1").value);
+        var n2 = Number(document.getElementById("n2").value);
+        var elem = document.getElementById("answerPane");
+        elem.innerHTML = n1/n2;
+      }
+      
+    </script>
+  </body>
+</html>
