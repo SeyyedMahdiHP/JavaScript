@@ -4,6 +4,7 @@ this section is for conceptual questions
 */
 1.What are the benefits of FirstClass Functions?
   /*
+  //https://www.sitepoint.com/higher-order-functions-javascript/
   //https://developer.mozilla.org/en-US/docs/Glossary/First-class_Function:
   A programming language is said to have First-class functions when functions 
   in that language are treated like any other variable. For example, in such a language,
