@@ -1,0 +1,16 @@
+{
+  "name": "killprogram",
+  "version": "1.0.0",
+  "description": "",
+  "main": "killProgram.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "SeyyedMahdi",
+  "license": "GPL-2.0",
+  "dependencies": {
+    "commander": "^2.12.2",
+    "node.cmd": "^2.0.7",
+    "readline-sync": "^1.4.7"
+  }
+}
