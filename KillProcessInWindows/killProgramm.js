@@ -18,7 +18,7 @@ var pName =  function(){
 }();
 var time = Number(readConsole.question("Enter time in 'Minutes' to Wait for Kill the process after it finished:")); 
 var timeToSeconds = time*60;
-print(pName+"will be Killed after "+time+" Minutes or "+timeToSeconds+" Seconds!");
+print(pName+" will be Killed after "+time+" Minutes or "+timeToSeconds+" Seconds!");
 setTimeout(function () {
   run("taskkill /IM "+pName+" /F"); //do something once
 }, parseInt(time*1000*60));
