@@ -9,8 +9,6 @@
   "author": "SeyyedMahdi",
   "license": "GPL-2.0",
   "dependencies": {
-    "commander": "^2.12.2",
-    "node.cmd": "^2.0.7",
     "readline-sync": "^1.4.7"
   }
 }
