@@ -29,3 +29,24 @@ var debug = function(message){
 };
 debug("Some Bug Message");
 
+
+
+// or:
+"use strict";
+const DEBUG_MODE_ENABLED = true;
+const FUNCTION_TO_BE_DEBUGGED = "all";
+function debug(message) {
+  if(DEBUG_MODE_ENABLED){
+    let stack = new Error().stack;
+    let caller = stack.split('\n')[2].trim();
+    if(caller.split(" ")[1] === FUNCTION_TO_BE_DEBUGGED || FUNCTION_TO_BE_DEBUGGED === "all" ){console.log(caller + ":" + message);}
+  }
+}
+function xyz() {
+    debug('hello');
+};
+function xyzw() {
+    debug('hello');
+};
+xyz();
+xyzw();
