@@ -55,3 +55,6 @@ function xyzw() {
 };
 xyz();
 xyzw();
+
+
+// method4 Section Debugging: Section Base: just type your Section and it will  debug all functions in that sections
