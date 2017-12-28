@@ -1,0 +1,48 @@
+<!-- in the name of Allah
+Lumberjack game
+SeyyedMahdi hassanpour
+smahdi1991@gmail.com
+www.webhoma.com
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body onload="loadScore()">
+    <p>نام وخود را وارد کنید:
+        <input type="text" id="userName">
+        <input type="button" value="ثبت امتیاز" onClick="saveRecord()" id="btnSave">
+        <br> امتیاز شما:<span id="user_score"></span>
+    </p>
+    <iframe id="gameFrame" src="1.html" height="500" width="300px" scrolling="no">
+        <p>Your browser does not support iframes.</p>
+    </iframe>
+    <script>
+        function saveRecord() {
+            let userName = document.getElementById("userName").value;
+            let score = window.frames[0].document.getElementById("score_value").innerHTML;
+			let userData = `${userName}=${score}`;
+            swal(`${userName} Score is ${score}`);
+            //localStorage.setItem(userName, score);
+            document.cookie = userData;
+        }
+
+        function loadScore() {
+			let isReady = 
+ window.frames[0].document.getElementById("page_wrap").classList.contains("in_result");  // the game is finished and score needs to be submit
+            //let score = localStorage.getItem("seyyed");
+            let [userName, score] = document.cookie.split(';')[0].split('=');
+            if (+score) {
+                document.getElementById("userName").value = userName;
+                document.getElementById("user_score").innerHTML = score;
+                document.cookie = "seyyednahdi=; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
+            }
+        }
+    </script>
+</body>
+
+</html>
