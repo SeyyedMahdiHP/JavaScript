@@ -1,0 +1,1 @@
+seyyed=1500,haman=1000,majid=500
