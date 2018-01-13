@@ -29,6 +29,7 @@ $this->output('<script src="../customJs-mahdi.js"></script><br></body>');
 خوب اگر بخواین که لینک ها تونم چپ چین بشن و بلاک کوت هاتون کمی خوشگل تر بشن کافیه اینکار زیر رو بکنید:
 این تکه کد css رو ببرید 
 </pre>
+<pre dir="auto">
 .qa-a-item-content p a,
 .entry-content p a
 {direction:ltr;
@@ -122,6 +123,7 @@ blockquote a:hover{
 blockquote em{
   font-style: italic;
 }
+</pre>
 <pre dir="auto">
 بریزید توی فایل qa-style.css 
 تم مورد نظرتون
