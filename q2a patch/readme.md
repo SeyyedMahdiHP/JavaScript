@@ -6,10 +6,10 @@
 سپس باید این فایل جاوا اسکریپت رو توی صفحه لود کنین برای این کار باید فایل qa-theme-base.php 
 رو از پوشه qa-include باز کنید و وارد تابع body  بشید
 و خط آخر این تابع رو به صورت زیر تغییر بدید:
-</pre>
+
 $this->output('<script src="../customJs-mahdi.js"></script><br></body>');
-<pre dir="auto">یعنی به صورت زیر باید بشه:
-</pre>
+یعنی به صورت زیر باید بشه:
+
 	public function body()
 	{
 		$this->output('<body');
@@ -24,7 +24,7 @@ $this->output('<script src="../customJs-mahdi.js"></script><br></body>');
 
 		$this->output('<script src="../customJs-mahdi.js"></script><br></body>');
 	}
-<pre dir="auto">
+
 خوب اگر بخواین که لینک ها تونم چپ چین بشن و بلاک کوت هاتون کمی خوشگل تر بشن کافیه اینکار زیر رو بکنید:
 این تکه کد css رو ببرید 
 
@@ -121,8 +121,7 @@ blockquote a:hover{
 blockquote em{
   font-style: italic;
 }
-</pre>
-<pre dir="auto">
+
 بریزید توی فایل qa-style.css 
 تم مورد نظرتون
 موفق و سربلند باشید و در پناه الله
