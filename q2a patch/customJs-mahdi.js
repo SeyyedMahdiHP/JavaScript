@@ -1,6 +1,8 @@
 // in the name of Allah 
 // github.com/SeyyedMahdiHP/JavaScript
 // customJs is an extension to make page more configurable
+
+/* fix right to left and left to right problem for Unicode and ASCII texts*/
 function isUnicode(str) {
     var letters = [];
     for (var i = 0; i <= str.length; i++) {
@@ -19,9 +21,6 @@ function setAttrTags_UnicodeBase(tag, attrName, attrValue, unicodeFlag) {
             elems[i].setAttribute(attrName, attrValue); 
     }
 }
-setAttrTags_UnicodeBase("p", "style", "text-align:justify; direction:ltr;", false);
-setAttrTags_UnicodeBase("p", "style", "text-align:justify; direction:rtl;",  true);
-
 function rmvElemsFromTags(tag, elem) {
     var selectedTags = document.getElementsByTagName(tag);
     for (var i = 0; i < selectedTags.length; i++) {
@@ -29,9 +28,8 @@ function rmvElemsFromTags(tag, elem) {
             selectedTags[i].innerHTML = selectedTags[i].innerHTML.replace(new RegExp(elem, 'g'), "");
     }
 }
-rmvElemsFromTags("blockquote", "<br>");
 
-//از اینجا به بعد رو اگر دوست داشتید که لینک های سایتتون پیش نمایش داشته باشن استفاده کنین و گرنه از اینجا به بعد رو میتونید حذف کنید
+/* add link preview with  iframe*/
 function addcss(css) {
     var head = document.getElementsByTagName('head')[0];
     var s = document.createElement('style');
@@ -46,7 +44,7 @@ function addcss(css) {
 
 function isFile(addr) {
     try {
-        var exts = "pdf,txt,jpg,jpeg,png".split(",");
+        var exts = "pdf,txt,jpg,jpeg,png,mp3,mp4,psd".split(",");
         var lastPart = addr.split("/").pop().split(".").pop();
         for (let i = 0; i < exts.length; i++) {
             if (lastPart == exts[i]) {
@@ -93,6 +91,14 @@ function miniPreview(tag) {
         console.log(err);
     }
 }
+//fix direction problem for Unicode ASCII paragraphs
+addcss('blockquote{background:#eee;padding:15px;margin:30px auto;border:1px solid #2b8bcb;font-size:14px;color:#000;position:relative;font-style:normal}blockquote,blockquote a:hover{color:#666}blockquote{display:block;background:#fff;padding:15px 20px 15px 45px;margin:0 0 20px;position:relative;font-family:"b nazanin",Georgia,serif;font-size:16px;line-height:1.2;-moz-box-shadow:2px 2px 15px #ccc;-webkit-box-shadow:2px 2px 15px #ccc;box-shadow:2px 2px 15px #ccc;border-left-style:solid;border-left-width:15px;border-right-style:solid;border-right-width:2px}blockquote::before{content:"\\201C";font-family:Georgia,serif;font-size:40px;font-weight:700;color:#999;position:absolute;left:10px;top:5px}blockquote::after{content:""}blockquote a{text-decoration:none;background:#eee;cursor:pointer;padding:0 3px;color:#c76c0c}blockquote em{font-style:italic}');
+addcss(".entry-content p a,.qa-a-item-content p a{direction:ltr;text-align:left}");
+setAttrTags_UnicodeBase("p", "style", "text-align:justify; direction:ltr;", false);
+setAttrTags_UnicodeBase("p", "style", "text-align:justify; direction:rtl;",  true);
+rmvElemsFromTags("blockquote", "<br>");
+
+//add preview to each links in the main section
 addcss(".qa-main p a div{visibility: hidden;z-index:1; -moz-box-sizing: content-box;    box-sizing: content-box;  position: absolute; transition: z-index steps(1) .3s, opacity .3s, margin-top .3s; width: 256px;    height: 144px;} ");
 addcss(".qa-main p a div iframe{width: 400%;    height: 400%;    transform: scale(0.25);  border: none;    -webkit-transform-origin: 0 0;    transform-origin: 0 0;}");
 addcss(".qa-main p a:hover>div{visibility:visible} ");
