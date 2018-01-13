@@ -1,4 +1,4 @@
-<article dir="auto">
+<pre dir="auto">
 بسم الله الرحمن الرحیم
 برای اینکه مشکل بهم ریختگی متن های فارسی و انگلیسی در این برنامه متن باز درست بشه  باید 
 ابتدا فایل customJs-mahdi.js 
@@ -6,7 +6,7 @@
 سپس باید این فایل جاوا اسکریپت رو توی صفحه لود کنین برای این کار باید فایل qa-theme-base.php 
 رو از پوشه qa-include باز کنید و وارد تابع body  بشید
 و خط آخر این تابع رو به صورت زیر تغییر بدید:
-</article>
+</pre>
 $this->output('<script src="../customJs-mahdi.js"></script><br></body>');
 یعنی به صورت زیر باید بشه:
 	public function body()
