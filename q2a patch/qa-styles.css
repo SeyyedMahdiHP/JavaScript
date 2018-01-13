@@ -1,18 +1,8 @@
-
 .qa-a-item-content p a,
 .entry-content p a
 {direction:ltr;
 text-align:left;
-float:left;
 }
-.entry-content blockquote p::after{
-    text-align: left;
-     content: "";
-    clear: both;
-    display: table;
-    
-}
-
 blockquote{
 	background:#eee;
 	padding:15px;
@@ -22,6 +12,10 @@ blockquote{
 	color:#000;
 	position:relative;
     
+}
+blockquote p{
+	margin:0;
+	padding:0;
 }
 
 /* 
