@@ -8,7 +8,8 @@
 و خط آخر این تابع رو به صورت زیر تغییر بدید:
 </pre>
 $this->output('<script src="../customJs-mahdi.js"></script><br></body>');
-یعنی به صورت زیر باید بشه:
+<pre dir="auto">یعنی به صورت زیر باید بشه:
+</pre>
 	public function body()
 	{
 		$this->output('<body');
@@ -23,10 +24,10 @@ $this->output('<script src="../customJs-mahdi.js"></script><br></body>');
 
 		$this->output('<script src="../customJs-mahdi.js"></script><br></body>');
 	}
-
+<pre dir="auto">
 خوب اگر بخواین که لینک ها تونم چپ چین بشن و بلاک کوت هاتون کمی خوشگل تر بشن کافیه اینکار زیر رو بکنید:
 این تکه کد css رو ببرید 
-
+</pre>
 .qa-a-item-content p a,
 .entry-content p a
 {direction:ltr;
@@ -121,7 +122,8 @@ blockquote em{
   font-style: italic;
 }
 
-
+<pre dir="auto">
 بریزید توی فایل qa-style.css 
 تم مورد نظرتون
 موفق و سربلند باشید و در پناه الله
+</pre>
