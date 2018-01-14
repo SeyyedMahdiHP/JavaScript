@@ -99,8 +99,8 @@ setAttrTags_UnicodeBase("p", "style", "text-align:justify; direction:rtl;",  tru
 rmvElemsFromTags("blockquote", "<br>");
 
 //add preview to each links in the main section
-//if you dont need this feature just comment below lines ans save it
-addcss(".qa-main p a div{visibility: hidden;z-index:1; -moz-box-sizing: content-box;    box-sizing: content-box;  position: absolute; transition: z-index steps(1) .3s, opacity .3s, margin-top .3s; width: 256px;    height: 144px;} ");
-addcss(".qa-main p a div iframe{width: 400%;    height: 400%;    transform: scale(0.25);  border: none;    -webkit-transform-origin: 0 0;    transform-origin: 0 0;}");
-addcss(".qa-main p a:hover>div{visibility:visible} ");
-miniPreview(".qa-main p a");
+//if you want this feature just Un-comment below lines and save it
+//addcss(".qa-main p a div{visibility: hidden;z-index:1; -moz-box-sizing: content-box;    box-sizing: content-box;  position: absolute; transition: z-index steps(1) .3s, opacity .3s, margin-top .3s; width: 256px;    height: 144px;} ");
+//addcss(".qa-main p a div iframe{width: 400%;    height: 400%;    transform: scale(0.25);  border: none;    -webkit-transform-origin: 0 0;    transform-origin: 0 0;}");
+//addcss(".qa-main p a:hover>div{visibility:visible} ");
+//miniPreview(".qa-main p a");
