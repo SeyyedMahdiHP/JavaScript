@@ -2,7 +2,7 @@
 <h2 dir="auto">راهنمای فارسی</h2>
 <pre dir="auto">
 بسم الله الرحمن الرحیم
-برای اینکه مشکل بهم ریختگی متن های فارسی و انگلیسی در این برنامه متن باز  و در تم snow-extlدرست بشه  باید 
+برای اینکه مشکل بهم ریختگی متن های فارسی و انگلیسی در این برنامه متن باز  و در تم snow-extl هنگامی که از ویرایشگر markdown استفاده میکنید درست بشه  باید 
 ابتدا فایل customJs-mahdi.js 
 رو در پوشه روت این برنامه قرار بدین
 سپس باید این فایل جاوا اسکریپت customJs-mahdi.jsرو توی صفحه لود کنین برای این کار باید فایل qa-theme-base.php 
@@ -35,7 +35,8 @@ $this->output('<script src="../customJs-mahdi.js"></script><br></body>');
 
 <h2>En Manual</h2>
 in the name of Allah
-for fixing the direction of unicode ascii paraghraphs in  "snow-extl" theme, just move customJs-mahdi.js into q2a root directory, 
+for fixing the direction of unicode ascii paraghraphs in  "snow-extl" theme when using
+markdown-editor, just move customJs-mahdi.js into q2a root directory, 
 and then add it to "qa-theme-base.php" under function body in qa-include directory. it has to be like this:
 <pre dir="auto">
 public function body()
