@@ -13,6 +13,7 @@ $this->output('<script src="../customJs-mahdi.js"></script><br></body>');
 <pre dir="auto">
 یعنی به صورت زیر باید بشه:
 </pre>
+<pre dir="auto">
 	public function body()
 	{
 		$this->output('<body');
@@ -27,6 +28,7 @@ $this->output('<script src="../customJs-mahdi.js"></script><br></body>');
 
 		$this->output('<script src="../customJs-mahdi.js"></script><br></body>');
 	}
+</pre>
 <pre dir="auto">
 موفق و سربلند باشید و در پناه الله
 </pre>
@@ -35,6 +37,7 @@ $this->output('<script src="../customJs-mahdi.js"></script><br></body>');
 in the name of Allah
 for fixing the direction of unicode ascii paraghraphs in  "snow-extl" theme, just move customJs-mahdi.js into q2a root directory, 
 and then add it to "qa-theme-base.php" under function body in qa-include directory. it has to be like this:
+<pre dir="auto">
 public function body()
 	{
 		$this->output('<body');
@@ -49,3 +52,7 @@ public function body()
 
 		$this->output('<script src="../customJs-mahdi.js"></script><br></body>');
 	}
+</pre>
+<pre dir="auto">
+GoodLuck, if you have any problem then mail me at:smahdi1991@gmail.com
+</pre>
