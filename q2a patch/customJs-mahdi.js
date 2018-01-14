@@ -1,7 +1,7 @@
 // in the name of Allah 
 // github.com/SeyyedMahdiHP/JavaScript
 // customJs is an extension to make page more configurable
-// special thanks to codegena.com/
+// special thanks to codegena.com/ for minipreview parts
 /* fix right to left and left to right problem for Unicode and ASCII texts*/
 function isUnicode(str) {
     var letters = [];
