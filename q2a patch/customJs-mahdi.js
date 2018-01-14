@@ -44,7 +44,7 @@ function addcss(css) {
 
 function isFile(addr) {
     try {
-        var exts = "pdf,txt,jpg,jpeg,png,mp3,mp4,psd".split(",");
+        var exts = "pdf,txt,jpg,jpeg,png,mp3,mp4,psd,zip,rar,7zip".split(",");
         var lastPart = addr.split("/").pop().split(".").pop();
         for (let i = 0; i < exts.length; i++) {
             if (lastPart == exts[i]) {
