@@ -7,7 +7,14 @@
 
 	<link rel="stylesheet" href="css/font-awesome.css">
 	<style>
-
+		@font-face {
+			font-family: IRANSans;
+			src: url(fonts/iransans.ttf);
+		}
+		@font-face {
+			font-family: Webyekan;
+			src: url(fonts/WebYekan.ttf);
+		}
 		*{
 			margin: 0;
 			padding: 0;
@@ -39,7 +46,7 @@
 		}
 		.headerTitle{
 			width: 240px;
-			font-family: IranSans;
+			font-family: IRANSans;
 			font-size: 24px;
 
 		}
@@ -199,14 +206,20 @@
 		.footerTitle{
 			font-family: IRANSans;
 			font-size: 24px;
-			padding: 38px;
+			padding: 45px;
 			text-align: center;
+
 		}
 		.footerCopyright{
-			padding: 10px;
+			padding: 15px;
 			background-color: #e04c4c;
 			font-size: 16px;
 			font-family: IRANSans;
+			margin-bottom: 0px;
+		}
+
+		.footerCopyright .footerAddress{
+			float: left;
 		}
 	</style>
 </head>
@@ -351,9 +364,9 @@
 
 <footer>
 	<div class="footerTitle">کپی کردن مطالب این وبلاگ شرعا جایز است!</div>
-	<div class="footerCopyright flex flex_space_between" style="justify-content: space-around">
-		<div class="footerDesigner">طراحی توسط سید مهدی حسن پور</div>
-		<div class="footerAddress">www.Webhoma.ir</div>
+	<div class="footerCopyright">
+		<span class="footerDesigner">طراحی توسط سید مهدی حسن پور</span>
+		<span class="footerAddress">www.Webhoma.ir</span>
 	</div>
 </footer>
 </body>
