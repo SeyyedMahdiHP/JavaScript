@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Pure JS One Page Scroll by SeyyedMahdi HassanPour forked from Pete R. | The Pete Design</title>
+
+    <style>
+        .wrapper {
+            height: 100% !important;
+            width: 100%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .full-size{
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="main">
+
+        <section>
+            <h1>
+                see my github: <a href="https://github.com/SeyyedMahdiHP/JavaScript">https://github.com/SeyyedMahdiHP/JavaScript</a>
+            </h1>
+            <p>
+                    to use this feature just put your sections in each section tag under div class="main"
+                <br> and it will be a cute onepgae slider.
+            </p>
+        </section>
+
+        <section>
+            <h2>why i forked it?</h2>
+            <p> i just make the code clear to use</p>
+        </section>
+
+        <section>
+            <h1>see?</h1>
+            <p>it is very easy to use thanks to Pete R. | The Pete Design </p>
+        </section>
+    </div>
+</div>
+
+<script type="text/javascript" src="onepagescroll.js"></script>
+<link href='onepage-scroll.css' rel='stylesheet' type='text/css'>
+<script>
+    onePageScroll(".main", {
+        sectionContainer: "section",
+        loop: true,
+        responsiveFallback: false
+    });
+</script>
+
+</body>
+</html>
