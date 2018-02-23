@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>SeyyedMahdiHassanpour:: make edge slider or onepage scroll with bootstrap tab content and tab pane</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  
+  <style>
+  .container-fluid{
+  padding:0;
+  }
+  .nav {
+    float: right;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0px;
+    top: 35%;
+    }
+    .tab-content {
+    max-width: 100vw;
+}
+    .tab-content div{
+    height:100vh;
+    }
+    .tab-content > .active {
+        max-width: 100vw;
+    }
+  </style>
+</head>
+<body>
+<div class="container-fluid">
+  <!-- Nav pills -->
+  <ul class="nav nav-pills" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" data-toggle="pill" href="#home">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="pill" href="#page1">Page1</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="pill" href="#page2">Page2</a>
+    </li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div id="home" class="container tab-pane bg-success active"><br>
+      <h3>HOME</h3>
+      <p>first page of  edge slider with using bootstrap: its just a simple edge slider witch designed by seyyed mahdi hassanpour</p>
+    </div>
+    <div id="page1" class="container tab-pane bg-info fade"><br>
+      <h3>Page2</h3>
+      <p>second page: its </p>
+    </div>
+    <div id="page2" class="container tab-pane bg-danger fade"><br>
+      <h3>Page3</h3>
+      <p>third page</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
