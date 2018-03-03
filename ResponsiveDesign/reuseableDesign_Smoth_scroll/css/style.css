@@ -1,0 +1,25 @@
+body {
+  padding-top: 56px; }
+
+.navbar .navbar-brand img {
+  width: 40px;
+  height: 40px; }
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%; }
+
+#HomeSection, #AboutSection {
+  background-color: #e74c3c;
+  color: white;
+  padding: 0; }
+  #HomeSection #jumbotronImage, #AboutSection #jumbotronImage {
+    width: 100%; }
+  #HomeSection .jumbotronTextOnImages, #AboutSection .jumbotronTextOnImages {
+    position: absolute;
+    width: 100%; }
+  #HomeSection #jumbotronHeading, #AboutSection #jumbotronHeading {
+    margin-top: 20%; }
+
+/*# sourceMappingURL=style.css.map */
