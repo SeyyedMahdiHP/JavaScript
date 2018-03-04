@@ -1,0 +1,44 @@
+body {
+  padding-top: 56px; }
+
+.navbar .navbar-brand img {
+  width: 40px;
+  height: 40px; }
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%; }
+
+#HomeSection, #AboutSection {
+  color: white;
+  padding: 0; }
+  #HomeSection #jumbotronImage, #AboutSection #jumbotronImage {
+    width: 100%; }
+  #HomeSection .jumbotronTextOnImages, #AboutSection .jumbotronTextOnImages {
+    position: absolute;
+    width: 100%; }
+  #HomeSection #jumbotronHeading, #AboutSection #jumbotronHeading {
+    margin-top: 20%; }
+
+.teamMemberContainer {
+  padding: 5px; }
+
+.teamMemberImage {
+  margin-bottom: 10px; }
+
+.socialImages {
+  width: 50px; }
+
+#ContactSection {
+  background: #000;
+  color: #FFF;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+
+#contactButtonContainer {
+  margin-top: 10px; }
+
+/*# sourceMappingURL=style.css.map */
