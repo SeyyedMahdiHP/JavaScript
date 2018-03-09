@@ -1,0 +1,41 @@
+$full-size: 100%;
+
+html, body{
+  padding-top: 56px;
+  height: $full-size;
+}
+.carouselImg{
+  width: $full-size;
+  height: $full-size;
+}
+footer{
+  text-align: center;
+}
+.cardImage{
+  width: $full-size;
+}
+.cardContainer{
+  margin-top: 10px;
+}
+#PostImagebanner {
+  width: $full-size;
+  margin-bottom: 35px;
+}
+#PostSnapShot{
+  margin-bottom: 35px;
+}
+.postArticleImage{
+  width: 75%;
+}
+#PostLinkHeader{
+  margin-top: 35px;
+}
+.postSidebarLine{
+  border-top: 7px solid #00549E;
+}
+.postPopularImage{
+  width: 75px;
+}
+.postPopularContainer{
+  margin-bottom: 10px;
+}
