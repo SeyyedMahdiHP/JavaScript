@@ -7,7 +7,7 @@ body {
 #sidebar {
   overflow: hidden;
   z-index: 3;
-  max-width: 250px; }
+}
 
 #sidebar .list-group {
   background-color: #333;
