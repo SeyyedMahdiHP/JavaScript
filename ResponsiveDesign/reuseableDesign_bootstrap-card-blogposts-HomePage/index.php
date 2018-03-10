@@ -51,7 +51,7 @@
                     <a href="#">
                         <img src="images/post1.jpg" alt="The invisible revolution" class="card-img-top cardImage">
                     </a>
-                    <div class="card-block">
+                    <div class="card-body">
                         <a href="#">
                             <h4 class="card-title">The invisible revolution</h4>
                         </a>
@@ -64,7 +64,7 @@
                     <a href="#">
                         <img src="images/post2.jpg" alt="Inside Building 87" class="card-img-top cardImage">
                     </a>
-                    <div class="card-block">
+                    <div class="card-body">
                         <a href="#">
                             <h4 class="card-title">Inside Building 87</h4>
                         </a>
@@ -77,7 +77,7 @@
                     <a href="#">
                         <img src="images/post1.jpg" alt="The invisible revolution" class="card-img-top cardImage">
                     </a>
-                    <div class="card-block">
+                    <div class="card-body">
                         <a href="#">
                             <h4 class="card-title">The invisible revolution</h4>
                         </a>
@@ -90,7 +90,7 @@
                     <a href="#">
                         <img src="images/post2.jpg" alt="Inside Building 87" class="card-img-top cardImage">
                     </a>
-                    <div class="card-block">
+                    <div class="card-body">
                         <a href="#">
                             <h4 class="card-title">Inside Building 87</h4>
                         </a>
@@ -103,7 +103,7 @@
                     <a href="#">
                         <img src="images/post1.jpg" alt="The invisible revolution" class="card-img-top cardImage">
                     </a>
-                    <div class="card-block">
+                    <div class="card-body">
                         <a href="#">
                             <h4 class="card-title">The invisible revolution</h4>
                         </a>
@@ -116,7 +116,7 @@
                     <a href="#">
                         <img src="images/post2.jpg" alt="Inside Building 87" class="card-img-top cardImage">
                     </a>
-                    <div class="card-block">
+                    <div class="card-body">
                         <a href="#">
                             <h4 class="card-title">Inside Building 87</h4>
                         </a>
@@ -129,7 +129,7 @@
                     <a href="#">
                         <img src="images/post1.jpg" alt="The invisible revolution" class="card-img-top cardImage">
                     </a>
-                    <div class="card-block">
+                    <div class="card-body">
                         <a href="#">
                             <h4 class="card-title">The invisible revolution</h4>
                         </a>
@@ -142,7 +142,7 @@
                     <a href="#">
                         <img src="images/post2.jpg" alt="Inside Building 87" class="card-img-top cardImage">
                     </a>
-                    <div class="card-block">
+                    <div class="card-body">
                         <a href="#">
                             <h4 class="card-title">Inside Building 87</h4>
                         </a>
